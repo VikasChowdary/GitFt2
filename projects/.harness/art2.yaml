@@ -1,0 +1,13 @@
+connector:
+  name: art2
+  identifier: art2
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitFt2
+  type: Artifactory
+  spec:
+    artifactoryServerUrl: test.com
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - acctgroup
