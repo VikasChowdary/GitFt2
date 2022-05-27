@@ -1,0 +1,24 @@
+connector:
+  name: gitFt2Connector
+  identifier: gitFt2Connector
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitFt2
+  type: Github
+  spec:
+    url: https://github.com/VikasChowdary/GitFt2
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: VikasChowdary
+          tokenRef: patForGithub
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: patForGithub
+    delegateSelectors:
+    - acctgroup
+    executeOnDelegate: true
+    type: Repo
